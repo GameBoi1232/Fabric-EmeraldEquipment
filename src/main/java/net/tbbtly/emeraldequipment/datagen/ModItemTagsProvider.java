@@ -23,6 +23,9 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
           tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.EMERALD_PICKAXE));
 
           tag(ItemTags.HEAD_ARMOR).add(ModItems.getRK(ModItems.EMERALD_HELMET));
+          tag(ItemTags.CHEST_ARMOR).add(ModItems.getRK(ModItems.EMERALD_CHESTPLATE));
+          tag(ItemTags.LEG_ARMOR).add(ModItems.getRK(ModItems.EMERALD_LEGGINGS));
+          tag(ItemTags.FOOT_ARMOR).add(ModItems.getRK(ModItems.EMERALD_BOOTS));
 
     }
 }

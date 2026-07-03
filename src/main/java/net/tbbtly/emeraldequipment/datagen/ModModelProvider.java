@@ -26,6 +26,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateSpear(ModItems.EMERALD_SPEAR);
 
         itemModelGenerators.generateFlatItem(ModItems.EMERALD_HELMET, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_CHESTPLATE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_LEGGINGS, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_BOOTS, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }
 

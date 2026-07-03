@@ -31,6 +31,12 @@ public class ModItems {
     //ARMOR
     public static final Item EMERALD_HELMET = registerItem("emerald_helmet",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final Item EMERALD_BOOTS = registerItem("emerald_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(EmeraldEquipment.MOD_ID, name),
