@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "emerald-equipment",
+	"version": "${version}",
+	"name": "Emerald Equipment",
+	"description": "This mod adds emerald equipment and sits between Iron and Diamond in comparison.",
+	"authors": [
+		"TBBTLY"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/emerald-equipment/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tbbtly.emeraldequipment.EmeraldEquipment"
+		],
+		"fabric-datagen": [
+			"net.tbbtly.emeraldequipment.EmeraldEquipmentDataGenerator"
+		]
+	},
+	"mixins": [
+		"emerald-equipment.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

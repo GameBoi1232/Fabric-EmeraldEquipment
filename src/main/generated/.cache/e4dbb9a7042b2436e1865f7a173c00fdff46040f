@@ -1,0 +1,14 @@
+// 26.2	-999999999-01-01T00:00:00	Emerald Equipment/Model Definitions
+f7bd4b0df65c0d2d92592d2e03c423e460122906 assets/emerald-equipment/items/emerald_axe.json
+5aa62c72fbb5b4c24617aab83e526099fea56dbb assets/emerald-equipment/items/emerald_hoe.json
+82e98db30e1d0f6cfbda009aa9587334698db4f5 assets/emerald-equipment/items/emerald_pickaxe.json
+9a9d5db3de4b6cbdfc1b67b251e83c440877614f assets/emerald-equipment/items/emerald_shovel.json
+cbee22d08aac7e971c1137787c27cfd82ba09547 assets/emerald-equipment/items/emerald_spear.json
+867af600a79128e02acb6bfaf05a7ab6d89791ff assets/emerald-equipment/items/emerald_sword.json
+0224d97969086da8a5b528d22beab1ab61924383 assets/emerald-equipment/models/item/emerald_axe.json
+01361467af41ea6ad8c106fe7f1f43fe2f3cbf7f assets/emerald-equipment/models/item/emerald_hoe.json
+f2377eca3215ae99e362a7a87977385c045a2e4b assets/emerald-equipment/models/item/emerald_pickaxe.json
+e3f80ae564b24b0cbd141b814e51b4d98c6ef9a1 assets/emerald-equipment/models/item/emerald_shovel.json
+b6fbd48d463dd993aad27b801c13e3060cb7b645 assets/emerald-equipment/models/item/emerald_spear.json
+1b9436e6e36f974403c2d52d04d44f9a3c72280d assets/emerald-equipment/models/item/emerald_spear_in_hand.json
+33f5afcd2f1f7a4370ccbf7c1703295cfaee47d3 assets/emerald-equipment/models/item/emerald_sword.json
