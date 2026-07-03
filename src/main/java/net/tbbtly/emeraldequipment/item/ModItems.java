@@ -6,16 +6,15 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.tbbtly.emeraldequipment.EmeraldEquipment;
-import net.tbbtly.emeraldequipment.tags.ModTags;
 
 import java.util.function.Function;
 
 public class ModItems {
 
-    //item stats (Between Iron and Diamond)
+    //TOOLS
     public static final Item EMERALD_SWORD = registerItem("emerald_sword",
             properties -> new Item(properties.sword(ModToolMaterials.EMERALD, 3.0f,-2.4f)));
     public static final Item EMERALD_AXE = registerItem("emerald_axe",
@@ -28,6 +27,10 @@ public class ModItems {
             properties -> new Item(properties.pickaxe(ModToolMaterials.EMERALD, 1.0f,-2.8f)));
     public static final Item EMERALD_SPEAR = registerItem("emerald_spear",
             properties -> new Item(properties.spear(ModToolMaterials.EMERALD,1.0F, 1.0F, 0.55F, 2.75F, 10.5F, 6.75F, 5.1F, 10.5F, 4.6F)));
+
+    //ARMOR
+    public static final Item EMERALD_HELMET = registerItem("emerald_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.HELMET)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(EmeraldEquipment.MOD_ID, name),
@@ -45,6 +48,7 @@ public class ModItems {
             output.accept(EMERALD_SWORD);
             output.accept(EMERALD_SPEAR);
             output.accept(EMERALD_AXE);
+            output.accept(EMERALD_HELMET);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {

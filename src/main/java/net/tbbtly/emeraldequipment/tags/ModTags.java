@@ -7,8 +7,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 
-
 public class ModTags {
+
     public static class Blocks {
 
         public static final TagKey<Block> NEEDS_EMERALD_TOOL = createTag("needs_emerald_tool");
@@ -27,4 +27,6 @@ public class ModTags {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(EmeraldEquipment.MOD_ID, name));
         }
     }
+
+
 }

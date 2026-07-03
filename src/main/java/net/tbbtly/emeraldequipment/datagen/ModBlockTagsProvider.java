@@ -2,10 +2,9 @@ package net.tbbtly.emeraldequipment.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
-import net.tbbtly.emeraldequipment.tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
-import net.tbbtly.emeraldequipment.item.ModItems;
+import net.tbbtly.emeraldequipment.tags.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -16,8 +15,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        //  tag(BlockTags.NEEDS_IRON_TOOL).add(ModItems.getRK(ModItems.EMERALD_PICKAXE));
-         // tag(BlockTags.INCORRECT_FOR_IRON_TOOL).add(ModItems.getRK(ModItems.EMERALD_PICKAXE));
+
+        //tag(ModTags.Blocks.NEEDS_EMERALD_TOOL).addTag(BlockTags.NEEDS_IRON_TOOL);
+        //tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL).addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
     }
 
 }

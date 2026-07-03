@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.tbbtly.emeraldequipment.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.BlockTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -22,6 +21,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
           tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.EMERALD_SHOVEL));
           tag(ItemTags.HOES).add(ModItems.getRK(ModItems.EMERALD_HOE));
           tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.EMERALD_PICKAXE));
+
+          tag(ItemTags.HEAD_ARMOR).add(ModItems.getRK(ModItems.EMERALD_HELMET));
 
     }
 }

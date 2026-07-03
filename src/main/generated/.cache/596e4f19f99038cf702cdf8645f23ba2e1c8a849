@@ -1,5 +1,6 @@
 // 26.2	-999999999-01-01T00:00:00	Emerald Equipment/Tags for minecraft:item
 25234a586ae5358e54a4d9c7d4f1a520c128957d data/minecraft/tags/item/axes.json
+40b4722e7b39c35b2100c4d015e07502330a1ebf data/minecraft/tags/item/head_armor.json
 332c75ad30c0ff353abf0ccebf2977df77609cba data/minecraft/tags/item/hoes.json
 ab16073cbabf20bb5279c02f82d2f0dd673295a7 data/minecraft/tags/item/pickaxes.json
 1fa67b0e17e07db9cf35b8b4052b004146fd973f data/minecraft/tags/item/shovels.json

@@ -13,8 +13,8 @@ public class EmeraldEquipment implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Emerald Equipment Initialized.");
 		ModItems.registerModItems();
+		LOGGER.info("Emerald Equipment Initialized.");
 
 	}
 }

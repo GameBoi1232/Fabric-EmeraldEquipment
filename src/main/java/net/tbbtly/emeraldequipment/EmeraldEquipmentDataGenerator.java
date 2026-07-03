@@ -12,5 +12,6 @@ public class EmeraldEquipmentDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModItemTagsProvider::new);
+
 	}
 }
