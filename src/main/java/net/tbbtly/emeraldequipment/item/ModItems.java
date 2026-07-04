@@ -55,6 +55,9 @@ public class ModItems {
             output.accept(EMERALD_SPEAR);
             output.accept(EMERALD_AXE);
             output.accept(EMERALD_HELMET);
+            output.accept(EMERALD_CHESTPLATE);
+            output.accept(EMERALD_LEGGINGS);
+            output.accept(EMERALD_BOOTS);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {

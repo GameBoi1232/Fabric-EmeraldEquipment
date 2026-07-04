@@ -16,9 +16,9 @@ public class ModArmorMaterials {
     public static final ResourceKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY =
             ResourceKey.createRegistryKey(Identifier.withDefaultNamespace("equipment_asset"));
 
-    public static final ResourceKey<EquipmentAsset> EMERALD = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(EmeraldEquipment.MOD_ID, "emerald"));
+    public static final ResourceKey<EquipmentAsset> EMERALD_KEY = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(EmeraldEquipment.MOD_ID, "emerald"));
 
     public static final ArmorMaterial EMERLAD_ARMOR_MATERIAL = new ArmorMaterial
-            (512, makeDefense(2, 5, 6, 2, 5), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, ModTags.Items.EMERALD_REPAIR, EMERALD);
+            (25, makeDefense(3, 5, 6, 3, 5), 18, SoundEvents.ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, ModTags.Items.EMERALD_REPAIR, EMERALD_KEY);
 
 }

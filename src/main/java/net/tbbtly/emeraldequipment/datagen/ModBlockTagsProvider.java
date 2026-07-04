@@ -16,9 +16,10 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
 
-        //tag(ModTags.Blocks.NEEDS_EMERALD_TOOL).addTag(BlockTags.NEEDS_IRON_TOOL);
-        //tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL).addTag(BlockTags.NEEDS_DIAMOND_TOOL);
-
+        //didnt want it to break obsidian but it does anyways lol
+        tag(ModTags.Blocks.NEEDS_EMERALD_TOOL).forceAddTag(BlockTags.NEEDS_IRON_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL).forceAddTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL).addTag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL);
     }
 
 }

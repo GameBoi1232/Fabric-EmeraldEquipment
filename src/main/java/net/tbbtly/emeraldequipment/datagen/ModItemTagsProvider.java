@@ -2,9 +2,11 @@ package net.tbbtly.emeraldequipment.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
+import net.minecraft.references.ItemIds;
 import net.tbbtly.emeraldequipment.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
+import net.tbbtly.emeraldequipment.tags.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,17 +17,20 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-          tag(ItemTags.SWORDS).add(ModItems.getRK(ModItems.EMERALD_SWORD));
-          tag(ItemTags.AXES).add(ModItems.getRK(ModItems.EMERALD_AXE));
-          tag(ItemTags.SPEARS).add(ModItems.getRK(ModItems.EMERALD_SPEAR));
-          tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.EMERALD_SHOVEL));
-          tag(ItemTags.HOES).add(ModItems.getRK(ModItems.EMERALD_HOE));
-          tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.EMERALD_PICKAXE));
 
-          tag(ItemTags.HEAD_ARMOR).add(ModItems.getRK(ModItems.EMERALD_HELMET));
-          tag(ItemTags.CHEST_ARMOR).add(ModItems.getRK(ModItems.EMERALD_CHESTPLATE));
-          tag(ItemTags.LEG_ARMOR).add(ModItems.getRK(ModItems.EMERALD_LEGGINGS));
-          tag(ItemTags.FOOT_ARMOR).add(ModItems.getRK(ModItems.EMERALD_BOOTS));
+        tag(ItemTags.SWORDS).add(ModItems.getRK(ModItems.EMERALD_SWORD));
+        tag(ItemTags.AXES).add(ModItems.getRK(ModItems.EMERALD_AXE));
+        tag(ItemTags.SPEARS).add(ModItems.getRK(ModItems.EMERALD_SPEAR));
+        tag(ItemTags.SHOVELS).add(ModItems.getRK(ModItems.EMERALD_SHOVEL));
+        tag(ItemTags.HOES).add(ModItems.getRK(ModItems.EMERALD_HOE));
+        tag(ItemTags.PICKAXES).add(ModItems.getRK(ModItems.EMERALD_PICKAXE));
+
+        tag(ItemTags.HEAD_ARMOR).add(ModItems.getRK(ModItems.EMERALD_HELMET));
+        tag(ItemTags.CHEST_ARMOR).add(ModItems.getRK(ModItems.EMERALD_CHESTPLATE));
+        tag(ItemTags.LEG_ARMOR).add(ModItems.getRK(ModItems.EMERALD_LEGGINGS));
+        tag(ItemTags.FOOT_ARMOR).add(ModItems.getRK(ModItems.EMERALD_BOOTS));
+
+        tag(ModTags.Items.EMERALD_REPAIR).add(ItemIds.EMERALD);
 
     }
 }
