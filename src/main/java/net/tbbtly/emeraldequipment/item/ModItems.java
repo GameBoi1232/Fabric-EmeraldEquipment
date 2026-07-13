@@ -7,6 +7,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.tbbtly.emeraldequipment.EmeraldEquipment;
 
@@ -37,6 +38,11 @@ public class ModItems {
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
     public static final Item EMERALD_BOOTS = registerItem("emerald_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL, ArmorType.BOOTS)));
+    public static final Item EMERALD_HORSE_ARMOR = registerItem("emerald_horse_armor",
+            properties -> new Item(properties.horseArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL)));
+    public static final Item EMERALD_NAUTILUS_ARMOR = registerItem("emerald_nautilus_armor",
+            properties -> new Item(properties.nautilusArmor(ModArmorMaterials.EMERLAD_ARMOR_MATERIAL)));
+
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(EmeraldEquipment.MOD_ID, name),
@@ -58,6 +64,8 @@ public class ModItems {
             output.accept(EMERALD_CHESTPLATE);
             output.accept(EMERALD_LEGGINGS);
             output.accept(EMERALD_BOOTS);
+            output.accept(EMERALD_HORSE_ARMOR);
+            output.accept(EMERALD_NAUTILUS_ARMOR);
         });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {

@@ -34,6 +34,9 @@ public class ModModelProvider extends FabricModelProvider {
                 ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModelGenerators.generateTrimmableItem(ModItems.EMERALD_BOOTS, ModArmorMaterials.EMERALD_KEY,
                 ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
+
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.EMERALD_NAUTILUS_ARMOR, ModelTemplates.FLAT_ITEM);
     }
 }
 
