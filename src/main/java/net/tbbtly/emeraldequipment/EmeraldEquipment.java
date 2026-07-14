@@ -1,7 +1,7 @@
 package net.tbbtly.emeraldequipment;
 
 import net.fabricmc.api.ModInitializer;
-
+import net.tbbtly.emeraldequipment.events.EventRegistry;
 import net.tbbtly.emeraldequipment.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +14,7 @@ public class EmeraldEquipment implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		EventRegistry.registerEvents();
 		LOGGER.info("Emerald Equipment Initialized.");
 
 	}
